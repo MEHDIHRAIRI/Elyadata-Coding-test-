@@ -1,5 +1,13 @@
 import mongoose from "mongoose";
 
+export interface IBlog  {
+  title: string
+  content: string
+  author: string
+  upvotes: number
+  downvotes: number
+}
+
 const blogSchema = new mongoose.Schema({
     title:{
         type: String,
