@@ -36,6 +36,8 @@ export default class BlogService {
   }
 
   async getAllBlogs(){
-   return await Blog.find().lean()
+   const blogs = await Blog.find().lean()
+   if(!blogs) throw new NotFoundError(BLOG_ERRORS.NOT_FOUND)
+   return blogs
   }
 }

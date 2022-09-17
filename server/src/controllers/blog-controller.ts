@@ -18,5 +18,5 @@ export const createBlog = async (req: Request, res: Response) => {
 
 export const getBlogs = async (req: Request, res:Response) => {
     const blogs = await blogService.getAllBlogs()
-    res.sendStatus(200).json({ blogs })
+    res.status(200).json({ blogs })
 }
