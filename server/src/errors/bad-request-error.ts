@@ -1,3 +1,4 @@
+import { ErrorBody } from '../@types/common'
 import BaseError from './base-error'
 export default class BadRequestError extends BaseError {
   constructor({ error, message }: ErrorBody = {}) {

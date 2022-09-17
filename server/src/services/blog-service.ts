@@ -1,5 +1,5 @@
 import { Blog, IBlog } from "../models/blog"
-import BadRequestError from '../errors/bad-reques-error'
+import BadRequestError from '../errors/bad-request-error'
 import NotFoundError from '../errors/not-found-error'
 import { BLOG_ERRORS } from "../constants/error-messages"
 

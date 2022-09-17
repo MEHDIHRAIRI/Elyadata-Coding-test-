@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express'
-import BadRequestError from '../errors/bad-reques-error'
+import BadRequestError from '../errors/bad-request-error'
 import { RequestValidationSchemas } from '../validations'
 
 const validate = (schemas: RequestValidationSchemas) => {

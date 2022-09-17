@@ -4,9 +4,8 @@ import { DB } from '../configs/config'
 export function connectToDatabase() {
   const connectionString = DB.CONNECTION_STRING
   if (!connectionString)
-    throw new Error(
-      'connectToDatabase => DATABASE_CONNECTION_STRING is undefined'
-    )
+    console.error(
+      'connectToDatabase => DATABASE_CONNECTION_STRING is undefined')
 
   return mongoose
     .connect(connectionString)

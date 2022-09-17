@@ -11,7 +11,7 @@ export const getBlogById = async (req: Request, res: Response) => {
 }
 
 export const createBlog = async (req: Request, res: Response) => {
-  const blog = req.validBody
+  const blog = req.body
   await blogService.createBlog(blog)
   res.sendStatus(200)
 }
