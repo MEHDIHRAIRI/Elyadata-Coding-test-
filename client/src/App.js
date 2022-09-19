@@ -19,7 +19,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Blogs />} />
-        <Route path="/blogs/:id" exact element={<BlogDetails />} />
+        <Route path="/blogs/:blogId" exact element={<BlogDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

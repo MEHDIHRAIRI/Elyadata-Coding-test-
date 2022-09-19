@@ -7,9 +7,6 @@ export default (blogs = [], action) => {
     case "FETCH_ALL":
       return action.payload;
 
-    case "FETCH":
-      return action.payload;
-
     case "DELETE":
       return blogs.filter((blog) => blog._id !== action.payload);
 

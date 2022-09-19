@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { getBlog } from "../../../redux/actions/blogs";
 function CardComponent({ blog }) {
+  const dispatch = useDispatch();
   return (
     <li key={blog._id} className="articles__article">
       <Link
@@ -11,6 +14,7 @@ function CardComponent({ blog }) {
             : { backgroundColor: "#e63946" }
         }
         to={`/blogs/${blog._id}`}
+        onClick={() => dispatch(getBlog(blog._id))}
       >
         <div className="articles__content articles__content--lhs">
           <h2 className="articles__title">{blog.title}</h2>
