@@ -1,0 +1,42 @@
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top:3%;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+
+    font-size: 30px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    margin-top: 5%;
+}
+
+.blogDetails {
+    width: 100%;
+}
+
+.rating {
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
